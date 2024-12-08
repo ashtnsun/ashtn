@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Purdue Swim Club</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="about-body">
+    <header class="site-header">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="media.html">Gallery</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>  
+
+    <main class="gallery-page">
+
+        <div class="contact-banner">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Whether you have a question, want to pay your dues, or need any information, contact us here.</p>
+          </div>
+        
+          <div class="links-container">
+            <div class="link-box">
+              <a href="https://www.toocoolpurdue.com/TooCOOLPurdueWL/vECItemCatalogOrganizationItems/Show-VECItemCatalogOrganizationItems-Table-Mobile.aspx?Organization=3011">PAY DUES</a>
+            </div>
+            <div class="link-box">
+              <a href="https://boilerlink.purdue.edu/submitter/form/start/213734">SWIM FORM</a>
+            </div>
+            <div class="link-box">
+              <a href="https://www.connect2mycloud.com/OnlineModules/PublicForm/FillOutPublicForm?formCode=093a8f98-392a-4492-9df1-ed1e1b580d48">SPORTS WAIVER</a>
+            </div>
+            <div class="link-box">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScog6DPbFCA2YG5ZawjdoLwEHsl-FXbEvSrhPBPJMuOCUcVnQ/viewform">REIMBURSEMENT</a>
+            </div>
+          </div>
+        
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="submit_form.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+              <label for="year">Year:</label>
+              <select id="year" name="year" required>
+                <option value="" disabled selected>Select Your Year</option>
+                <option value="incoming">Incoming</option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="graduate">Graduate</option>
+              </select>
+            
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required>
+            
+              <label for="message">Question/Message:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your question or message here..." required></textarea>
+            
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </main>
+  
+
+  <footer>
+    <p>2024 Ashton Sun CGT141 Final Project.</p>
+  </footer>
+
+</body>
+
+</html>
